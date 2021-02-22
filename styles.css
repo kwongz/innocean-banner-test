@@ -242,6 +242,14 @@ h3 {
 
 /* end of general styling */
 
+/* centering banner */
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
 .banner {
   position: relative;
   width: 300px;
@@ -257,7 +265,7 @@ h3 {
 
 .header {
   height: 210px;
-  background: url(./assets/Tucson.png) center no-repeat;
+  background: url(./assets/Tucson.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   position: relative;
