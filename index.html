@@ -11,6 +11,12 @@
 </head>
 <body>
     <div class="banner">
+        <div class="popUpContainer" id="popUpContainer">
+            <div class="legalPopUp">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laudantium placeat voluptatibus repellendus voluptatem temporibus consectetur laborum, odit recusandae eveniet qui quam ad eum error necessitatibus optio vel quibusdam corrupti nobis illum eligendi! Aliquid atque dolore perferendis facilis, quae voluptatum culpa velit quia temporibus? Ratione perspiciatis dolore minima cupiditate, ex cum quidem. Perferendis expedita in voluptatum minima dolorum voluptatem voluptates?</p>
+                <button class="close">[X] Close</button>
+            </div>
+        </div>
         <div class="bannerWrapper">
             <header>
                 <div class="hyundai">
@@ -33,8 +39,8 @@
                             <span class="break">road again in a</span>
                             new Tucson.
                         </h2>
-                    </div> -->
-                    <!-- <div class="slide slide2 inline">
+                    </div>
+                    <div class="slide slide2 inline">
                         <h2>2020 TUCSON</h2>
                         <h3>Preferred FWD features:</h3>
                         <div class="description">
@@ -46,8 +52,8 @@
                                 <span class="break">and Android Auto&trade; <span class="subscript">&#10013;</span></span>
                             </p>
                         </div>
-                    </div> -->
-                    <!-- <div class="slide slide3 inline">
+                    </div>
+                    <div class="slide slide3 inline">
                         <h2>2020 TUCSON</h2>
                         <h3>Preferred FWD features:</h3>
                         <div class="description">
@@ -59,8 +65,8 @@
                                 <span class="break">with rearview camera</span>
                             </p>
                         </div>
-                    </div> -->
-                    <!-- <div class="slide slide4 inline">
+                    </div>
+                    <div class="slide slide4 inline">
                         <h2>2020 TUCSON</h2>
                         <h3>Preferred FWD features:</h3>
                         <div class="description">
@@ -79,10 +85,17 @@
                                 <img class="divider" src="./assets/Shape 1.jpg" alt="divider icon">
                             </div>
                             <div class="leftBox">
-                                <p>Get <span class=" break main">0<span class="percent">%</span></span> financing</p>
+                                <p>
+                                    Get 
+                                    <span class=" break main">0<span class="percent">%</span></span> 
+                                    financing</p>
                             </div>
                             <div class="rightBox">
-                                <p>for <span class="break main">72</span>months<span>++</span></p>
+                                <p>
+                                    for 
+                                    <span class="break main">72</span>
+                                    months<span class="plusPlus">++</span>
+                                </p>
                             </div>
                             <div class="bottomBox">
                                 Example selling price of $30,184 
@@ -90,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="legal">legal</button>
+                <button class="legal" id="legal">legal</button>
                 <p class="model">ultimate mode shown<span class="subscript">&#9670;</span></p>
             </header>
             <div class="footer">
@@ -101,5 +114,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

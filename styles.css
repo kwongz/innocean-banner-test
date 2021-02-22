@@ -243,6 +243,7 @@ h3 {
 /* end of general styling */
 
 .banner {
+  position: relative;
   width: 300px;
   height: 250px;
   border: 1px solid black;
@@ -343,6 +344,13 @@ h1 {
 
 .slide2,
 .slide3,
+.slide4,
+.slide5 {
+  opacity: 0;
+}
+
+.slide2,
+.slide3,
 .slide4 {
   position: relative;
   font-size: 10px;
@@ -396,6 +404,18 @@ h1 {
 
 .percent {
   font-size: 15px;
+  position: absolute;
+  bottom: 37px;
+}
+
+.plusPlus {
+  font-size: 3px;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(90deg);
+  position: relative;
+  bottom: 7px;
+  left: 15px;
 }
 
 .dividerContainer {
@@ -446,7 +466,10 @@ figure {
 }
 
 .inline {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
   height: 90px;
 }
 
@@ -465,7 +488,6 @@ h2 {
   text-transform: uppercase;
   background-color: Transparent;
   background-repeat: no-repeat;
-  border: none;
   cursor: pointer;
   overflow: hidden;
   padding: 0px;
@@ -508,4 +530,42 @@ h2 {
 
 .logo {
   width: 40%;
+}
+
+/* legal popup styling */
+.popUpContainer {
+  position: absolute;
+  z-index: 10;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  height: 250px;
+  display: none;
+}
+
+.legalPopUp {
+  padding: 10px;
+  position: relative;
+}
+
+.legalPopUp p {
+  margin-top: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+}
+
+/* hover effects for button */
+
+button {
+  border: none;
+  border-bottom: 1px solid transparent;
+}
+
+button:hover,
+button:focus {
+  border-bottom: 1px solid black;
 }
